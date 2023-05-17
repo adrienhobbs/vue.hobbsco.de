@@ -17,24 +17,21 @@ const { pause, start, reset } = useRaf(
 </script>
 
 <template>
-  <div>
+  <div class="min-h-[500px] flex items-center justify-center flex-col">
     <main class="flex items-center justify-center">
       <button
         class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-        @click="start"
-      >
+        @click="start">
         Start
       </button>
       <button
         class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-        @click="pause"
-      >
+        @click="pause">
         Pause
       </button>
       <button
         class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-        @click="reset"
-      >
+        @click="reset">
         Reset
       </button>
     </main>
