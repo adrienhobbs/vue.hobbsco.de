@@ -8,7 +8,7 @@ interface Subscription {
   once: boolean
 }
 
-export function useToggle(
+export function useToggleEvents(
   initialValue: boolean = false
 ): [Callable, Callable, () => void, Ref<boolean>] {
   const booleanValue = ref(initialValue)
